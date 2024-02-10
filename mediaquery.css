@@ -1,0 +1,47 @@
+@media only screen and (max-width:1146px) {
+    .main ul li .item {
+        font-size: 10px;
+
+    }
+
+
+    .img .imga {
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+        margin: 5px auto;
+        border: 2px solid black;
+        overflow: hidden;
+        z-index: -4;
+    }
+
+    .img .imga img {
+        width: 300px;
+        height: 200px;
+       
+        position: relative;
+
+    }
+}
+@media only screen and (max-width:1003px) {
+    .main ul {
+       
+        flex-wrap: wrap;
+ 
+    }
+}
+@media only screen and (max-width:620px) {
+    footer {
+        flex-wrap: wrap;
+    }
+    .footer {
+        margin: 60px ;
+        
+    
+    }
+    .ftext {
+       
+        margin: 30px;
+       
+    }
+}

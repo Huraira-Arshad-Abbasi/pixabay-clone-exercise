@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+
+
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+    animation: harry4 5s ease-in-out 1s infinite alternate;
+}
+
+#navbar h1 {
+    margin: 5px 25px;
+    color: rgb(255, 255, 255);
+}
+
+#navbar ul {
+    display: flex;
+    margin-left: auto;
+
+}
+
+#navbar ul li {
+    list-style: none;
+    margin: 15px 15px;
+
+}
+
+#navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-radius: 30px;
+    padding: 3px 8px;
+    transition: all 1s ease-out;
+
+}
+
+#navbar ul li a:hover {
+    display: block;
+    border-radius: 10px;
+    color: rgb(53, 53, 8);
+    background-color: rgb(187, 210, 231);
+}
+
+#logo {
+    animation: harry 5s ease-in-out 1s infinite alternate;
+}
+
+#upload {
+    background-color: rgb(162, 65, 65);
+
+}
+
+#join {
+
+    background-color: cadetblue;
+}
+
+#home {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+    z-index: -4;
+
+
+
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url(images/porsche.jpg) no-repeat; /* TODO: porsche.jpg is missing — replace with your hero image */
+    background-position-y: 12px;
+    background-position-x: center;
+    background-size: 100%;
+    height: 70%;
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    padding-top: 20vh;
+    opacity: 100%;
+    z-index: -4;
+    animation: harry5 10s ease 0s infinite alternate;
+}
+
+.primary {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+    animation: harry2 20s ease-in-out 1s infinite alternate;
+}
+
+.secondary {
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    animation: harry3 15s ease-out 1s infinite alternate;
+}
+
+.search {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin: 8px;
+    padding: 2px 10px;
+    border: 1px solid rgb(199, 199, 241);
+
+
+
+}
+
+.search input {
+    display: inline-flex;
+    width: 300px;
+    margin: 6px;
+    border: none;
+
+}
+
+.search img {
+
+    height: 15px;
+
+
+}
+
+.main {
+
+    position: relative;
+    margin-top: 2%;
+    z-index: -4;
+
+}
+
+
+.main::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 120%;
+    width: 100%;
+
+}
+
+.main ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main ul li {
+    list-style: none;
+    margin: 15px 15px;
+
+}
+
+.main ul li .item {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    background-color: rgb(242, 237, 231);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    padding: 5px 33px;
+    transition: background-color 1s ease-out;
+
+}
+
+.main ul li .item:hover {
+    border-radius: 5px;
+    background-color: rgb(28, 100, 2);
+    color: rgb(254, 254, 254);
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+.img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2vh 1vw;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.image {
+    width: 30vw;
+    border-radius: 5px;
+
+}
+
+#hr1 {
+    margin-top: 10px;
+}
+
+#hr2 {
+    margin-top: 5%;
+}
+
+footer {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.footer {
+    margin-left: 60px;
+    margin-top: 80px;
+    margin-bottom: 250px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer h3 {
+    animation: harry 5s ease-in-out 1s infinite alternate;
+    margin-top: 95px;
+}
+
+.footer p {
+    /* text-align: center; */
+    margin-top: 10px;
+    font-size: smaller;
+}
+
+.footer>.fimg {
+    display: flex;
+    height: 20px;
+    margin-top: 10px;
+
+
+}
+
+.fimg img {
+    margin-top: 5px;
+    margin-right: 40px;
+
+}
+
+.ftexth {
+    margin-left: auto;
+    display: inline-flex;
+
+
+}
+
+.ftext {
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    margin-right: 20px;
+}
+
+.ftext>h6 {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ftext .discover,
+.cominty,
+.About {
+    display: flex;
+    flex-direction: column;
+}
+
+.ftext>span {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    color: rgb(147, 171, 164);
+
+}
+
+.end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(114, 239, 230);
+
+}
+
+.end>p {
+    padding: 20px;
+    font-size: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(146, 170, 163);
+}
